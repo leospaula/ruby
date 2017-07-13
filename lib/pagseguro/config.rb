@@ -26,9 +26,14 @@ module PagSeguro
     # Defaults to +UTF-8+.
     attr_accessor :encoding
 
+    # The timeout that will be used.
+    # Defaults to +50+.
+    attr_accessor :timeout
+
     def initialize
       @environment = :production
       @encoding = "UTF-8"
+      @timeout = 50
     end
   end
 end
